@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang+'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions3</title>
+    </head>
+        <body>
+                    <script>
+                        // function that accepts a number as a value and checks that it isn't less than 2
+                        function isPrimeNumber(number) {
+                            if (number < 2 ) {
+                                return false;
+                            }
+                            // a loop from 2 to the square root of the number
+                            for (let i = 2; i <= Math.sqrt(number); i++) {
+                                // if the number is divisible by any value in the loop, not prime
+                                if (number % i === 0) {
+                                    return false;
+                                }
+                            }
+                        return true;
+                        }
+
+                            
+                        
+                    const num = 9;
+                    if (isPrimeNumber(num)) {
+                        console.log(`${num} is a prime number`);
+                    } else {
+                        console.log(`${num} is not a prime number`)
+                    }
+                            
+                        
+                            
+
+                    </script>
+        </body>
+    </html>
+
+
+    // In order to tell if a number is prime or not using JS, first you must put in a function to check if the number is less than 2.
+    // Both 0 and 1 cannot be prime numbers.
+    // next, you assign i = 2, and then loop a number from itself, to its squareroot. This will check if the number is divisible by any number between the original and the square.
+    // Then, return false if it is, return true if it isn't.
+    //Then print the conditions to the console.

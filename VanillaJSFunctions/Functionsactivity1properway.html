@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang+'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions1</title>
+    </head>
+    <body>
+            <script>
+                        // write a program that prints the array and produces the max value in the array
+               // Array values
+                let myArray = [10, 2, 3, 4, 7];
+                // Step 1: print the array
+                printArray(myArray);
+                // Step 2: find and print the max value
+                findAndPrintMax(myArray);
+
+                // Step 1 function
+               function printArray(arr) {
+                console.log("The content of the array is:", arr);
+               }
+               
+               // Step 2 function
+                
+               function findAndPrintMax(arr) {
+                 let max = Math.max(...arr);
+               console.log("The max value in the array is:", max)
+               }
+
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 1 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p id ='text'>Vanilla JS DOM</p> 
+        
+        <script>
+            // declare a variable that will hold the paragraph text while we edit
+           const myText = document.getElementById('text');
+           // change colour to red
+            myText.style.color = 'red';
+            // change size to 24 pixels
+            myText.style.fontSize = '24px';
+        </script>
+        <div>
+        <button id="jsstyle"
+        onclick="js_style()">Style</button>
+        </div>
+    </body>
+</html>
