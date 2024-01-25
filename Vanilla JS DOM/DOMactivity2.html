@@ -13,16 +13,14 @@
         <form id="volumeForm">
             <div class="form-group">
                 <label for="formRadiusInput">Radius:</label>
-                <input type="text" class="for-control" id="RadiusInput">
+                <input type="text" class="for-control" id="radiusInput">
             </div>
 
              <div class="from-group mt-5">
                 <label for="formVolumeOutput">Volume</label>
-                <textarea class="form-control" id="formVolumeOutput" rows="1" readonly></textarea>
+                <textarea class="form-control" id="formVolumeOutput" rows="1"></textarea>
             </div>
         
-        
-
         <button type="button" class="btn bt-primary" onclick="calculateForm()">Calculate</button>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -32,17 +30,17 @@
             <script>
                 function calculateForm() {
                     // get input data
-                    const formRadiusInput = document.getElementById('formRadiusInput').value;
+                    const radiusInput = document.getElementById('radiusInput').value;
+                    
 
                     // plug input data into formula
-                    const volumeOutput = "Volume: " + (4/3) * Math.PI * Math.pow(formRadiusInput, 3);
+                    const volumeOutput = (4/3) * Math.PI * Math.pow(radiusInput, 3);
+                    
 
                     // display the formVolumeOutput in the output textarea
                     document.getElementById('formVolumeOutput').value = volumeOutput;
                 }
 
-
             </script>
-
     </body>
 </html>
